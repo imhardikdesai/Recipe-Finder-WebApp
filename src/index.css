@@ -12,3 +12,31 @@ code {
   --main-color: #f47c18;
   --main-bg-color: #f8ebe8;
 }
+
+
+@media only screen and (max-width: 704px) {
+  .logo-buttons {
+    display: none;
+  }
+
+  nav {
+    justify-content: center !important;
+  }
+  #searchBar{
+    width: 68% !important;
+  }
+
+}
+
+@media only screen and (max-width: 570px) {
+  
+  .nav-logo {
+  flex-direction: column !important;
+  }
+
+  #searchBar{
+    width: 88% !important;
+  }
+ 
+
+}

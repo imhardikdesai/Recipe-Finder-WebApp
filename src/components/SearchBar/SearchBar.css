@@ -10,7 +10,8 @@
     display: block;
     padding: 11px 31px;
     background-color: var(--main-bg-color);
-    width: 600px;
+    /* width: 600px; */
+    width: 45%;
     margin-top: 20px;
 }
 
