@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0px 30px;
+    padding-top: 16px;
+}
+
+ul li:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.nav-btn {
+    border: 0px;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 2px 16px;
+    font-size: 15px;
+}
+
+.login {
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.signup {
+    background-color: var(--main-color);
+    color: white;
+}

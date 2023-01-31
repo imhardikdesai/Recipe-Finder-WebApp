@@ -1,0 +1,48 @@
+.card-box {
+    display: flex;
+    flex-direction: column;
+    /* width: 215px; */
+    margin: 26px;
+}
+
+.card-box img {
+    height: 228px;
+    border-radius: 30px;
+}
+
+.card-details {
+    width: 215px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.card-by {
+    color: var(--main-color);
+}
+
+.card-btn {
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    border: 0;
+    color: var(--main-color);
+    padding: 3px 10px;
+    font-size: 13px;
+}
+
+.readmore {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.readmore:hover {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+.ingredients:hover {
+    background-color: var(--main-color);
+    color: white;
+}

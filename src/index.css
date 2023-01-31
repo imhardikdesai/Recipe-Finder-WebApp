@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Cabin', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --main-color: #f47c18;
+  --main-bg-color: #f8ebe8;
+}
