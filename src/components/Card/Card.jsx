@@ -13,7 +13,7 @@ const Card = (props) => {
         </div>
         <div className="card-btns">
           {props.readmore}
-          <a target={"_blank"} rel="_noreferrer" href={props.readmore}>
+          <a target={"_blank"} rel="noreferrer" href={props.readmore}>
             <button className="mx-1 readmore card-btn">Read more</button>
           </a>
           <button className="mx-1 ingredients card-btn">Ingredients</button>
