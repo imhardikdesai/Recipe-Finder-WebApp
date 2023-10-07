@@ -1,6 +1,8 @@
+/* Styles for larger screens (e.g., laptops) */
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px;
     margin-bottom: 25px;
 }
@@ -12,16 +14,29 @@ nav {
 ul {
     list-style-type: none;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: auto; 
 }
 
 ul li {
-    margin: 0px 30px;
-    padding-top: 16px;
+    font-size: 20px;
+    margin: 10px 30px 0 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
 }
 
 ul li:hover {
     cursor: pointer;
     color: var(--main-color);
+}
+
+.hamburger{
+    display: none;
 }
 
 .nav-btn {
@@ -40,4 +55,60 @@ ul li:hover {
 .signup {
     background-color: var(--main-color);
     color: white;
+}
+
+/* Styles for mobile screens (hamburger menu) */
+@media (max-width: 768px) {
+
+    ul{
+        display:none;
+    }
+
+    ul li{
+        font-size: 18px;
+    }
+
+    .mobile-open .nav-links {
+        display: block;
+        position: absolute;
+        top: 60px; /* Adjust the distance from the top as needed */
+        right: 10px;
+        border: 2px solid rgb(87, 72, 45);
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 1px;
+        z-index: 1;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: var(--main-color);
+        transition: 0.4s;
+    }
+
+    .hamburger.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }
