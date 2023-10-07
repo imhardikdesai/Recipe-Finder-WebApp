@@ -46,3 +46,23 @@
     background-color: var(--main-color);
     color: white;
 }
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    .card-box{
+        margin: 13px;
+    }
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .card-btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
